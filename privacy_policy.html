@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - ROMRAM Games</title>
     <style>
-        /* Base Reset and Typography */
+        /* Dark Mode Color Variables */
         :root {
-            --primary-color: #2563eb; /* Modern Blue */
-            --text-dark: #1f2937;
-            --text-light: #4b5563;
-            --bg-color: #f3f4f6;
-            --card-bg: #ffffff;
+            --primary-color: #60a5fa; /* Bright Blue for Dark Mode */
+            --bg-color: #111827;      /* Very Dark Gray (Background) */
+            --card-bg: #1f2937;       /* Dark Gray (Card) */
+            --text-main: #f9fafb;     /* Almost White */
+            --text-muted: #9ca3af;    /* Light Gray */
+            --border-color: #374151;  /* Border Gray */
         }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg-color);
-            color: var(--text-dark);
+            color: var(--text-main);
             line-height: 1.6;
             margin: 0;
             padding: 20px;
@@ -32,9 +33,10 @@
             max-width: 750px;
             width: 100%;
             padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
             margin: auto;
+            border: 1px solid var(--border-color);
         }
 
         /* Typography Styling */
@@ -43,30 +45,28 @@
             font-weight: 800;
             text-align: center;
             margin-bottom: 0.5rem;
-            color: #111827;
+            color: var(--text-main);
         }
 
         .subtitle {
             text-align: center;
-            color: var(--text-light);
+            color: var(--text-muted);
             font-size: 0.9rem;
             margin-bottom: 3rem;
             padding-bottom: 1rem;
-            border-bottom: 1px solid #e5e7eb;
+            border-bottom: 1px solid var(--border-color);
         }
 
         h2 {
             font-size: 1.25rem;
             font-weight: 600;
-            color: #111827;
+            color: var(--primary-color);
             margin-top: 2rem;
             margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
         }
 
         p, li {
-            color: var(--text-light);
+            color: #d1d5db; /* Soft white for reading */
             font-size: 1rem;
         }
 
@@ -84,11 +84,11 @@
             color: var(--primary-color);
             text-decoration: none;
             font-weight: 500;
-            transition: color 0.2s ease;
+            transition: opacity 0.2s ease;
         }
 
         a:hover {
-            color: #1d4ed8;
+            opacity: 0.8;
             text-decoration: underline;
         }
 
@@ -97,8 +97,8 @@
             margin-top: 3rem;
             text-align: center;
             font-size: 0.85rem;
-            color: #9ca3af;
-            border-top: 1px solid #e5e7eb;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
             padding-top: 20px;
         }
 
@@ -120,8 +120,6 @@
         <p class="subtitle">Developer: ROMRAM &nbsp;|&nbsp; Last Updated: November 21, 2025</p>
 
         <p>Thank you for playing games developed by ROMRAM. This Privacy Policy applies to all games, applications, and services provided by ROMRAM on the Google Play Store.</p>
-
-        <p>We respect the privacy of our users and are committed to protecting it. This policy explains our practices regarding data collection.</p>
 
         <h2>1. Information We Collect</h2>
         <ul>
@@ -145,7 +143,14 @@
             <li>Our applications are safe for all ages. We do not knowingly collect any personal information from children under the age of 13.</li>
         </ul>
 
-        <h2>5. Contact Us</h2>
+        <h2>5. Health App Declaration</h2>
+        <ul>
+            <li><strong>Not a Health App:</strong> ROMRAM applications are strictly categorized as "Games" or "Entertainment."</li>
+            <li><strong>No Medical Advice:</strong> Our apps do not provide medical advice, diagnosis, or treatment. They do not function as medical devices or fitness trackers.</li>
+            <li><strong>No Health Data:</strong> We do not collect, store, or process any health-related data (such as heart rate, physical activity, or medical history).</li>
+        </ul>
+
+        <h2>6. Contact Us</h2>
         <p>If you have any questions or suggestions about this Privacy Policy, do not hesitate to contact us.</p>
         <p>
             <strong>Email:</strong> <a href="mailto:romariomartinus@gmail.com">romariomartinus@gmail.com</a>
